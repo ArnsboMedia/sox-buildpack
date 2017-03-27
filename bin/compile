@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "-----> Installing SoX 14.4.1"
+
+cd $1
+
+curl http://archive.ubuntu.com/ubuntu/pool/universe/s/sox/sox_14.4.1.orig.tar.gz -s -O
+
+mkdir -p vendor/sox
+
+tar -C vendor/sox -xvf sox_14.4.1.orig.tar.gz
